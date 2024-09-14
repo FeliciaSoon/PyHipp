@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # Submit this script with: sbatch <this-filename>
@@ -26,4 +27,4 @@ DPT.objects.processDirs(level='channel', cmd='import PyHipp as pyh; from PyHipp 
 print(time.localtime()); \
 print(time.time()-t0);"
 
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:018084650241:awsnotify --message "RPLS3JobDone"
+aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:418295715246:awsnotify --message "RPLS3JobDone"
